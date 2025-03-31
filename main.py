@@ -18,3 +18,16 @@ def nwd_2(liczba_a, liczba_b):
 print(nwd_2(36,126)) # nwd(26,126) = 18
 
 # liczba pierwsa
+
+def liczna_pierwsza(n):
+    j = 2
+    for i in range(n):
+        if j <= (n ** 0.5):
+            if n % j == 0:
+                return f'liczba złożona'
+            else:
+                j = j + 1
+        else:
+            return f'liczba pierwsza'
+
+print(liczna_pierwsza(9))
